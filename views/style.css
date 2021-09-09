@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(39, 39, 39);
+}
+
+.main {
+    margin: 10px;
+}
+
+.content {
+    height: 100%;
+    width: 70%;
+    position: relative;
+    float: right;
+    border-radius: 10px;
+    background-position: center;
+}
+
+.img {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-items: flex-start;
+    justify-self: flex-start;
+    justify-content: space-evenly;
+}
+
+.content-img {
+    width: 300px;
+    margin: 0.5%;
+    cursor: pointer;
+}
+
+.content-img :hover {
+    opacity: 1;
+}
+
+.content-img>img {
+    width: 300px;
+}
+
+.nav {
+    position: relative;
+}
+
+#txt {
+    border-bottom: 1px solid rgb(109, 109, 109);
+}
+
+.sidebar {
+    border-radius: 10px;
+    font-family: 'Roboto', sans-serif;
+    width: 30%;
+    background-image: linear-gradient(#1f1f1f, #3c3c3c);
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    color: #fff;
+    position: fixed;
+    opacity: 1;
+    height: 945px;
+    display: block;
+}
+
+.user-avatar {
+    padding-top: 20%;
+}
+
+.user-avatar>img {
+    width: 300px;
+    border-radius: 50%;
+}
+
+.text-user>h3,
+.text-user>h4 {
+    padding: 10px 0;
+    letter-spacing: 1;
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0 auto;
+    font-size: 18px;
+}
+
+.text-user>h3 {
+    font-size: 28px;
+}
+
+.text-user>h4 {
+    animation: typing 4.5s steps(80, end), blink-caret .75s step-end infinite;
+}
+
+.txtP {
+    animation: typing 5.ms steps(1, end) blink-caret 0.5s step-end infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+    to {
+        width: 100%
+    }
+}
+
+
+/* The typewriter cursor effect */
+
+@keyframes blink-caret {
+    from,
+    to {
+        border-color: transparent
+    }
+    50% {
+        border-color: orange;
+    }
+}
+
+.content-happy>p {
+    line-height: 1.9;
+    padding: 40px 20px;
+}
+
+.item-sidebar {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.music {
+    padding: 0px 0 50px 0;
+}
+
+.music>audio {
+    width: 80%;
+}
+
+.btn-custom {
+    margin: 0 40px;
+    padding-top: 20px;
+    padding-bottom: 120px;
+    color: rgb(87, 87, 87);
+}
+
+.btn-custom>button {
+    width: 220px;
+    padding: 20px 0px;
+    background: #fff;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.btn-custom>button>a {
+    text-decoration: none;
+}
+
+.btn-custom>button:hover,
+.btn-custom>button>a:hover {
+    opacity: 0.7;
+    color: red;
+}
+
+.typed-cursor {
+    visibility: hidden;
+}

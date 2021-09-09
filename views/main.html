@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<link rel="shortcut icon" href="./icon/logo.png" type="image/x-icon">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A.D. Birthday</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <div class="main">
+        <div class="nav">
+            <div class="sidebar">
+                <div class="user-avatar">
+                    <img src="./img/avt.jpg" alt="">
+                </div>
+                <div class="text-user">
+                    <h3>Nguyễn Thanh Tùng</h3>
+                    <h4>Chúc mừng sinh nhật Tùng (10/09/2002)</h4>
+                </div>
+                <div class="content-happy">
+                    <p id="txt"></p>
+                </div>
+                <div class="music">
+                    <audio autoplay controls src="./music/ThangMayEmNhoAnh-HaAnhTuan-6995531.mp3" type="audio/mpeg"></audio>
+                </div>
+                <div class="item-sidebar">
+                    <div class="btn-custom btn-gift">
+                        <button type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">GET GIFT</button>
+                    </div>
+                    <div class="btn-custom btn-crush">
+                        <button type="button" onclick=""> GET MESSAGE </button>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="staticBackdropLabel">Nhập quà mà muốn mình tặng đi nào!</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="mb-3">
+                                    <label for="message-text" class="col-form-label">Quà tặng của bạn là:</label>
+                                    <textarea class="form-control" id="message-text"></textarea>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" id="sendClose" class="btn btn-secondary" data-bs-dismiss="modal">Huỷ</button>
+                            <button type="button" id="send" class="btn btn-primary">Gửi đi nào!</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="img">
+                <div id="image" onclick="toShow()" class="content-img"><img src="./img/tung (1).jpg" alt=""></div>
+                <div id="image" onclick="toShow()" class="content-img"><img src="./img/tung (6).jpg" alt=""></div>
+                <div id="image" onclick="toShow()" class="content-img"><img src="./img/tung (8).jpg" alt=""></div>
+                <div id="image" onclick="toShow()" class="content-img"><img src="./img/tung (10).jpg" alt=""></div>
+                <div id="image" onclick="toShow()" class="content-img"><img src="./img/tung (11).jpg" alt=""></div>
+                <div id="image" onclick="toShow()" class="content-img"><img src="./img/tung (12).jpg" alt=""></div>
+                <div id="image" onclick="toShow()" class="content-img"><img src="./img/tung (7).jpg" alt=""></div>
+                <div id="image" onclick="toShow()" class="content-img"><img src="./img/tung (5).jpg" alt=""></div>
+                <div id="image" onclick="toShow()" class="content-img"><img src="./img/tung (9).jpg" alt=""></div>
+                <div id="image" onclick="toShow()" class="content-img"><img src="./img/tung (2).jpg" alt=""></div>
+                <div id="image" onclick="toShow()" class="content-img"><img src="./img/tung (3).jpg" alt=""></div>
+                <div id="image" onclick="toShow()" class="content-img"><img src="./img/tung (4).jpg" alt=""></div>
+                <div id="image" onclick="toShow()" class="content-img"><img src="./img/tung (13).jpg" alt=""></div>
+                <div id="image" onclick="toShow()" class="content-img"><img src="./img/tung (14).jpg" alt=""></div>
+                <div id="image" onclick="toShow()" class="content-img"><img src="./img/tung (15).jpg" alt=""></div>
+                <div id="image" onclick="toShow()" class="content-img"><img src="./img/tung (16).jpg" alt=""></div>
+                <div id="image" onclick="toShow()" class="content-img"><img src="./img/tung (17).jpg" alt=""></div>
+                <div id="image" onclick="toShow()" class="content-img"><img src="./img/tung (18).jpg" alt=""></div>
+                <div id="image" onclick="toShow()" class="content-img"><img src="./img/tung (19).jpg" alt=""></div>
+                <div id="image" onclick="toShow()" class="content-img"><img src="./img/tung (20).jpg" alt=""></div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="../js/jquery.js"></script>
+<script src="../js/script.js"></script>
+<script src="../js/count.js"></script>
+<script src="../js/typed.js"></script>
+<script>
+    $(function() {
+        $("#txt").typed({
+            strings: [
+                "Sinh nhật vui vẻ nha mầy",
+                "Lại sinh nhật (onlline) nữa rồi. 19 gần 20 rồi bớt lươn đi nha!!!! ",
+                "Chúc Mừng Sinh Nhật Thằng Cu Bạn !"
+            ],
+            typeSpeed: 10,
+            smartBackspace: true
+        });
+
+    }, 5000);
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</html>
